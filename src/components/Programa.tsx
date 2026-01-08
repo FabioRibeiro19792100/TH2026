@@ -101,7 +101,7 @@ export const Programa = () => {
         </div>
 
         {/* Grid 2x4 - duas linhas de 4 colunas */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16">
           {topics.map((topic, index) => {
             const Icon = topic.icon;
             return (

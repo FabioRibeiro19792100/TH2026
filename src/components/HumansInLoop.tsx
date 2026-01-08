@@ -18,7 +18,7 @@ export const HumansInLoop = () => {
         <div className="space-y-16 md:space-y-24">
           {/* Texto introdutório - bem dimensionado */}
           <div className="mb-0 md:mb-2">
-            <p className="text-2xl md:text-4xl font-light tracking-tight" style={{ color: '#d4ff00' }}>
+            <p className="text-xl md:text-4xl font-light tracking-tight" style={{ color: '#d4ff00' }}>
               &lt;o diferencial do modelo <span className="font-bold">tech hall</span>&gt;
             </p>
           </div>
@@ -41,7 +41,7 @@ export const HumansInLoop = () => {
             {/* Parte 1: Alumni */}
             <div>
               {/* Duas colunas - 40/60 */}
-              <div className="grid grid-cols-[40%_60%] gap-0">
+              <div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-0">
                 <div className="relative hidden md:block">
                   {/* Circular rotating text - Alumni */}
                   <div className="absolute top-0 left-0 w-48 h-48 md:w-56 md:h-56" style={{ animation: 'spin 20s linear infinite reverse' }}>
@@ -88,7 +88,7 @@ export const HumansInLoop = () => {
             {/* Parte 2: Tech Buddies */}
             <div>
               {/* Duas colunas - 60/40 (invertido) */}
-              <div className="grid grid-cols-[60%_40%] gap-0">
+              <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-0">
                 <div className="space-y-6 md:space-y-8 text-left">
                   <div className="space-y-6 mb-8 md:mb-12">
                     <Code className="w-16 h-16 stroke-[1]" />

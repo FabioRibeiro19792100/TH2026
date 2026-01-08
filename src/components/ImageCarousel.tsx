@@ -73,17 +73,19 @@ export const ImageCarousel = () => {
       {/* Faixa de contato - estilo similar ao botão */}
       <div className="pt-6 md:pt-8 w-screen -mx-6">
         <div 
-          className="w-full px-12 py-6 text-2xl md:text-3xl font-bold rounded-none uppercase inline-flex items-center justify-center"
+          className="w-full px-6 md:px-12 py-4 md:py-6 text-lg md:text-3xl font-bold rounded-none uppercase inline-flex items-center justify-center"
           style={{
             backgroundColor: '#d4ff00',
             color: '#000000',
-            minHeight: '72px',
+            minHeight: '60px',
             lineHeight: '1.2'
           }}
         >
           Para contratar separadamente imersões ou Labs,{' '}
           <a 
-            href="mailto:camila@mastertech.com.br" 
+            href="https://wa.me/5511981023003" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="underline hover:opacity-70 transition-opacity"
           >
             entre em contato

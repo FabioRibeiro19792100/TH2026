@@ -37,7 +37,7 @@ export const Details = () => {
               <p className="text-sm text-muted-foreground uppercase tracking-wide font-normal">
                 contrato
               </p>
-              <h3 className="text-4xl font-normal leading-tight">
+              <h3 className="text-2xl md:text-4xl font-normal leading-tight">
                 8 sessões<br />por temporada
               </h3>
             </div>
@@ -50,10 +50,10 @@ export const Details = () => {
                 calendário
               </p>
               <div className="space-y-3">
-                <p className="text-2xl font-normal">26 e 27 de março</p>
-                <p className="text-2xl font-normal">23 e 24 de abril</p>
-                <p className="text-2xl font-normal">28 e 29 de maio</p>
-                <p className="text-2xl font-normal">25 e 26 de junho</p>
+                <p className="text-xl md:text-2xl font-normal">26 e 27 de março</p>
+                <p className="text-xl md:text-2xl font-normal">23 e 24 de abril</p>
+                <p className="text-xl md:text-2xl font-normal">28 e 29 de maio</p>
+                <p className="text-xl md:text-2xl font-normal">25 e 26 de junho</p>
               </div>
             </div>
           </div>
@@ -64,10 +64,10 @@ export const Details = () => {
               <p className="text-sm text-muted-foreground uppercase tracking-wide font-normal">
                 formato
               </p>
-              <h3 className="text-4xl font-normal leading-tight">
+              <h3 className="text-2xl md:text-4xl font-normal leading-tight">
                 presencial,<br />em São Paulo,<br />na vila Madalena
               </h3>
-              <p className="text-4xl font-bold italic">
+              <p className="text-2xl md:text-4xl font-bold italic">
                 9am - 5pm
               </p>
             </div>
@@ -86,7 +86,7 @@ export const Details = () => {
             return (
               <div key={index} className="space-y-6">
                 <Icon className="w-16 h-16 stroke-[1]" />
-                <h4 className="text-2xl font-bold">{feature.title}</h4>
+                <h4 className="text-xl md:text-2xl font-bold">{feature.title}</h4>
                 <p className="text-muted-foreground leading-relaxed font-normal">
                   {feature.description}
                 </p>

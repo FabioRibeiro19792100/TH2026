@@ -8,10 +8,10 @@ export const GetOnBoard = () => {
       
       <div className="max-w-5xl mx-auto space-y-16 relative z-10">
         <div className="text-center space-y-6">
-          <h2 className="text-[80px] md:text-[180px] font-light leading-[0.85] tracking-tight">
+          <h2 className="text-[60px] md:text-[180px] font-light leading-[0.85] tracking-tight">
             get on
           </h2>
-          <h2 className="text-[80px] md:text-[180px] font-light leading-[0.85] tracking-tight">
+          <h2 className="text-[60px] md:text-[180px] font-light leading-[0.85] tracking-tight">
             <span className="relative inline-block">
               <span className="relative z-10">board</span>
               <span className="absolute bottom-4 md:bottom-8 left-0 w-12 md:w-24 h-2 md:h-3 bg-[#d4ff00] z-0"></span>
@@ -25,7 +25,7 @@ export const GetOnBoard = () => {
 
         <div className="space-y-12 text-center max-w-3xl mx-auto pt-8">
           {/* Investimento com círculo rotativo */}
-          <div className="relative flex items-center justify-center min-h-[500px] md:min-h-[700px] w-full">
+          <div className="relative flex items-center justify-center min-h-[300px] md:min-h-[700px] w-full">
             {/* Circular rotating text - Investimento */}
             <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="w-[500px] h-[500px] md:w-[700px] md:h-[700px]" style={{ animation: 'spin 40s linear infinite reverse' }}>
@@ -69,14 +69,15 @@ export const GetOnBoard = () => {
 
       {/* Botão principal - largura total da página */}
       <div className="pt-6 md:pt-8 w-screen -mx-6">
-        <Button size="lg" className="w-full px-12 py-6 text-2xl md:text-3xl font-bold rounded-none" style={{
+        <Button size="lg" className="w-full px-6 md:px-12 py-4 md:py-6 text-xl md:text-3xl font-bold rounded-none" style={{
           backgroundColor: '#d4ff00',
           color: '#000000',
-          minHeight: '72px',
+          minHeight: '60px',
           lineHeight: '1.2'
         }} asChild>
-          <a href="https://mastertech-tech.typeform.com/to/Fu14nimv" target="_blank" rel="noopener noreferrer" className="block">
-            QUERO GARANTIR MEU ASSENTO • QUERO GARANTIR MEU ASSENTO • QUERO GARANTIR MEU ASSENTO
+          <a href="https://wa.me/5511981023003" target="_blank" rel="noopener noreferrer" className="block">
+            <span className="hidden md:inline">QUERO GARANTIR MEU ASSENTO • QUERO GARANTIR MEU ASSENTO • QUERO GARANTIR MEU ASSENTO</span>
+            <span className="md:hidden">QUERO GARANTIR MEU ASSENTO</span>
           </a>
         </Button>
       </div>

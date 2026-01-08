@@ -27,13 +27,13 @@ export const Hero = () => {
       <div className="flex-1 flex items-center justify-center overflow-hidden relative z-10">
         <div className="text-center space-y-2 relative">
           <h1 
-            className="text-7xl font-bold tracking-tight md:text-[12rem] md:transition-transform md:duration-200 md:ease-out"
+            className="text-6xl font-bold tracking-tight md:text-[12rem] md:transition-transform md:duration-200 md:ease-out"
             style={{ transform: translateX > 0 ? `translateX(${translateX}px)` : 'none' }}
           >
             tech hall
           </h1>
           <p 
-            className="text-5xl font-light tracking-tight md:text-9xl md:transition-transform md:duration-200 md:ease-out"
+            className="text-4xl font-light tracking-tight md:text-9xl md:transition-transform md:duration-200 md:ease-out"
             style={{ transform: translateX > 0 ? `translateX(-${translateX}px)` : 'none' }}
           >
             IA para a vida real

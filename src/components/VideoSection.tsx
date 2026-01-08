@@ -2,7 +2,7 @@ export const VideoSection = () => {
   return (
     <section className="w-screen relative overflow-hidden bg-black" style={{ marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }}>
       <video
-        className="w-full h-auto object-cover"
+        className="w-full h-auto max-h-[50vh] md:max-h-none object-cover"
         autoPlay
         muted
         loop
