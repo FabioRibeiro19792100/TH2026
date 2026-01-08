@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 25% 92%;
+    --foreground: 0 0% 5%;
+
+    --card: 35 25% 92%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 35 25% 92%;
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 0 0% 5%;
+    --primary-foreground: 35 25% 92%;
+
+    --secondary: 35 20% 85%;
+    --secondary-foreground: 0 0% 5%;
+
+    --muted: 35 20% 85%;
+    --muted-foreground: 0 0% 35%;
+
+    --accent: 35 20% 85%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 25% 92%;
+
+    --border: 35 15% 80%;
+    --input: 35 15% 80%;
+    --ring: 0 0% 5%;
+
+    --radius: 0.5rem;
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 35 25% 92%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 35 25% 92%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 35 25% 92%;
+
+    --primary: 35 25% 92%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 35 25% 92%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 35 25% 92%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 35 25% 92%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 35 25% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    cursor: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  #cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium;
+  }
+
+  .animate-reveal {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
