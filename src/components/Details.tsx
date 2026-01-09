@@ -54,6 +54,9 @@ export const Details = () => {
                 <p className="text-xl md:text-2xl font-normal">23 e 24 de abril</p>
                 <p className="text-xl md:text-2xl font-normal">28 e 29 de maio</p>
                 <p className="text-xl md:text-2xl font-normal">25 e 26 de junho</p>
+                <p className="text-sm md:text-base text-muted-foreground mt-4">
+                  * Últimas quintas e sextas do mês
+                </p>
               </div>
             </div>
           </div>
@@ -68,7 +71,7 @@ export const Details = () => {
                 presencial,<br />em São Paulo,<br />na vila Madalena
               </h3>
               <p className="text-2xl md:text-4xl font-bold italic">
-                9am - 5pm
+                9am - 1pm
               </p>
             </div>
           </div>

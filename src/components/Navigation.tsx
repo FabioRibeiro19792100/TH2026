@@ -39,11 +39,11 @@ export const Navigation = () => {
             
             <div className="flex items-center gap-8">
               <a 
-                href="#programa" 
-                onClick={(e) => scrollToSection(e, 'programa')}
+                href="#about" 
+                onClick={(e) => scrollToSection(e, 'about')}
                 className="font-semibold hover:opacity-70 transition-opacity relative group cursor-pointer"
               >
-                <span className="pb-1 inline-block">O programa</span>
+                <span className="pb-1 inline-block">A experiência</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground group-hover:w-full transition-all duration-300"></span>
               </a>
               <a 
@@ -55,19 +55,19 @@ export const Navigation = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground group-hover:w-full transition-all duration-300"></span>
               </a>
               <a 
+                href="#programa" 
+                onClick={(e) => scrollToSection(e, 'programa')}
+                className="font-semibold hover:opacity-70 transition-opacity relative group cursor-pointer"
+              >
+                <span className="pb-1 inline-block">O programa</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground group-hover:w-full transition-all duration-300"></span>
+              </a>
+              <a 
                 href="#humans-in-loop" 
                 onClick={(e) => scrollToSection(e, 'humans-in-loop')}
                 className="font-semibold hover:opacity-70 transition-opacity relative group cursor-pointer"
               >
                 <span className="pb-1 inline-block">A comunidade</span>
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a 
-                href="#about" 
-                onClick={(e) => scrollToSection(e, 'about')}
-                className="font-semibold hover:opacity-70 transition-opacity relative group cursor-pointer"
-              >
-                <span className="pb-1 inline-block">A experiência</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground group-hover:w-full transition-all duration-300"></span>
               </a>
               <a 
@@ -100,11 +100,11 @@ export const Navigation = () => {
               <SheetContent side="right" className="w-[300px] bg-background">
                 <div className="flex flex-col gap-6 mt-8">
                   <a 
-                    href="#programa" 
-                    onClick={(e) => scrollToSection(e, 'programa')}
+                    href="#about" 
+                    onClick={(e) => scrollToSection(e, 'about')}
                     className="text-2xl font-semibold hover:opacity-70 transition-opacity cursor-pointer"
                   >
-                    O programa
+                    A experiência
                   </a>
                   <a 
                     href="#detalhes" 
@@ -114,18 +114,18 @@ export const Navigation = () => {
                     Como funciona
                   </a>
                   <a 
+                    href="#programa" 
+                    onClick={(e) => scrollToSection(e, 'programa')}
+                    className="text-2xl font-semibold hover:opacity-70 transition-opacity cursor-pointer"
+                  >
+                    O programa
+                  </a>
+                  <a 
                     href="#humans-in-loop" 
                     onClick={(e) => scrollToSection(e, 'humans-in-loop')}
                     className="text-2xl font-semibold hover:opacity-70 transition-opacity cursor-pointer"
                   >
                     A comunidade
-                  </a>
-                  <a 
-                    href="#about" 
-                    onClick={(e) => scrollToSection(e, 'about')}
-                    className="text-2xl font-semibold hover:opacity-70 transition-opacity cursor-pointer"
-                  >
-                    A experiência
                   </a>
                   <a 
                     href="#inscricao" 

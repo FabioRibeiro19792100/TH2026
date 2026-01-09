@@ -36,7 +36,7 @@ export const Hero = () => {
             className="text-4xl font-light tracking-tight md:text-9xl md:transition-transform md:duration-200 md:ease-out"
             style={{ transform: translateX > 0 ? `translateX(-${translateX}px)` : 'none' }}
           >
-            IA para a vida real
+            IA para decisões estratégicas
           </p>
         </div>
       </div>

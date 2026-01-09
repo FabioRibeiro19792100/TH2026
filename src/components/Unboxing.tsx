@@ -45,7 +45,7 @@ export const Unboxing = () => {
 
       <div className="flex-1 flex flex-col items-center justify-center space-y-8 md:space-y-16">
         <h2 className="text-5xl md:text-[200px] font-light text-center">
-          unboxin<span className="underline decoration-4 underline-offset-8">g</span>
+          unboxing
         </h2>
         
         <div className="flex flex-col items-center animate-arrow-bounce">
