@@ -72,26 +72,25 @@ export const ImageCarousel = () => {
       
       {/* Faixa de contato - estilo similar ao botão */}
       <div className="pt-6 md:pt-8 w-screen -mx-6">
-        <div 
-          className="w-full px-6 md:px-12 py-4 md:py-6 text-lg md:text-3xl font-bold rounded-none uppercase inline-flex items-center justify-center"
+        <a 
+          href="https://wa.me/5511981023003" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full px-6 md:px-12 text-lg md:text-3xl font-bold rounded-none uppercase flex items-center justify-center"
           style={{
             backgroundColor: '#d4ff00',
             color: '#000000',
-            minHeight: '60px',
-            lineHeight: '1.2'
+            height: '72px',
+            lineHeight: '1.2',
+            paddingTop: '0',
+            paddingBottom: '0'
           }}
         >
-          Para contratar separadamente imersões ou Labs,{' '}
-          <a 
-            href="https://wa.me/5511981023003" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-70 transition-opacity"
-          >
+          Para contratar separadamente imersões ou Labs, <span className="underline">
             entre em contato
-          </a>
+          </span>
           .
-        </div>
+        </a>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 export const GetOnBoard = () => {
   return <section id="inscricao" className="py-32 px-6 relative overflow-hidden">
       {/* Subtle vertical lines */}
@@ -69,17 +68,30 @@ export const GetOnBoard = () => {
 
       {/* Botão principal - largura total da página */}
       <div className="pt-6 md:pt-8 w-screen -mx-6">
-        <Button size="lg" className="w-full px-6 md:px-12 py-4 md:py-6 text-xl md:text-3xl font-bold rounded-none" style={{
-          backgroundColor: '#d4ff00',
-          color: '#000000',
-          minHeight: '60px',
-          lineHeight: '1.2'
-        }} asChild>
-          <a href="https://wa.me/5511981023003" target="_blank" rel="noopener noreferrer" className="block">
-            <span className="hidden md:inline">QUERO GARANTIR MEU ASSENTO • QUERO GARANTIR MEU ASSENTO • QUERO GARANTIR MEU ASSENTO</span>
-            <span className="md:hidden">QUERO GARANTIR MEU ASSENTO</span>
-          </a>
-        </Button>
+        <a 
+          href="https://wa.me/5511981023003" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="w-full px-6 md:px-12 text-lg md:text-3xl font-bold rounded-none uppercase flex items-center justify-center overflow-hidden relative"
+          style={{
+            backgroundColor: '#d4ff00',
+            color: '#000000',
+            height: '72px',
+            lineHeight: '1.2',
+            paddingTop: '0',
+            paddingBottom: '0'
+          }}
+        >
+          <div className="hidden md:flex items-center w-full overflow-hidden">
+            <div className="flex animate-marquee whitespace-nowrap">
+              <span>QUERO GARANTIR MEU ASSENTO • </span>
+              <span>QUERO GARANTIR MEU ASSENTO • </span>
+              <span>QUERO GARANTIR MEU ASSENTO • </span>
+              <span>QUERO GARANTIR MEU ASSENTO • </span>
+            </div>
+          </div>
+          <span className="md:hidden whitespace-nowrap">QUERO GARANTIR MEU ASSENTO</span>
+        </a>
       </div>
 
       <div className="max-w-5xl mx-auto space-y-16 relative z-10">

@@ -11,6 +11,7 @@ import { Experience } from "@/components/Experience";
 import { HumansInLoop } from "@/components/HumansInLoop";
 import { GetOnBoard } from "@/components/GetOnBoard";
 import { ImageCarousel } from "@/components/ImageCarousel";
+import { Coordenadoras } from "@/components/Coordenadoras";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -29,6 +30,7 @@ const Index = () => {
       <GetOnBoard />
       <Experience />
       <ImageCarousel />
+      <Coordenadoras />
       <Footer />
     </div>
   );
