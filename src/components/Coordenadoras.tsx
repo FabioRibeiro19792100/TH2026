@@ -14,7 +14,7 @@ export const Coordenadoras = () => {
       nome: "Karen Kanaan",
       organizacao: "42 São Paulo",
       foto: karenFoto,
-      linkedin: "https://www.linkedin.com/in/karenkanaan"
+      linkedin: "https://www.linkedin.com/in/karen-kanaan-8578665/?originalSubdomain=br"
     }
   ];
 
