@@ -48,8 +48,33 @@ export const Unboxing = () => {
           unboxin<span className="underline decoration-4 underline-offset-8">g</span>
         </h2>
         
-        <div className="text-6xl md:text-[120px] leading-none">
-          ↓
+        <div className="flex flex-col items-center animate-arrow-bounce">
+          <svg 
+            className="w-8 md:w-16 h-32 md:h-48" 
+            viewBox="0 0 24 120" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {/* Linha vertical (cabo) */}
+            <line 
+              x1="12" 
+              y1="0" 
+              x2="12" 
+              y2="100" 
+              stroke="currentColor" 
+              strokeWidth="4" 
+              strokeLinecap="round"
+            />
+            {/* Seta (ponta) */}
+            <path 
+              d="M 12 100 L 4 88 L 12 100 L 20 88" 
+              stroke="currentColor" 
+              strokeWidth="4" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              fill="none"
+            />
+          </svg>
         </div>
       </div>
       
